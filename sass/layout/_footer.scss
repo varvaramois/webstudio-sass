@@ -1,133 +1,132 @@
-
 .footer > .container {
-    display: flex;
-    justify-content: space-between;
-  }
-  .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--main-bg-color);
-  }
-  .footer-logo-link {
-    color: #fff;
-    font-family: Raleway;
-    font-size: 26px;
-    letter-spacing: 0.78px;
-  }
-  .footer-address {
-    gap: 9px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-  .footer-address-link {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    font-style: normal;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .footer-address-link:hover,
-  .footer-address-link:focus {
-    color: var(--accent-color);
-    cursor: pointer;
-  }
-  .footer-address .footer-address-link:first-child {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-  }
-  .footer-address .footer-address-link:first-child:hover {
-    color: var(--accent-color);
-    cursor: pointer;
-  }
-  .soc-footer-list {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-  }
-  .soc-footer-link {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .soc-footer-icon {
-    fill: var(--add-white);
-  }
-  .soc-footer-link:hover,
-  .soc-footer-link:focus {
-    background-color: var(--accent-color);
-  }
-  .subscribe {
-    padding-top: 12px;
-  }
-  .subscribe-title {
-    color: var(--add-white);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
-  .subscribe-form {
-    display: flex;
-  }
-  .subscribe-input {
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background: rgba(33, 150, 243, 0);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px; /* 125% */
-    letter-spacing: 0.48px;
-    padding: 15px 16px;
-    width: 358px;
-    margin-right: 12px;
-    outline: none;
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .subscribe-input:focus,
-  .subscribe-input:hover {
-    border-color: var(--accent-color);
-    cursor: pointer;
-  }
-  .subscribe-btn {
-    border-radius: 4px;
-    background: #2196f3;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    border: none;
-    color: var(--add-white);
-    font-weight: 700;
-    line-height: 30px; /* 187.5% */
-    letter-spacing: 0.96px;
-    padding: 10px 28px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .subscribe-btn:focus,
-  .subscribe-btn:hover {
-    opacity: 0.9;
-    cursor: pointer;
-  }
-  .icon-telegram {
-    fill: var(--add-white);
-  }
+  display: flex;
+  justify-content: space-between;
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--main-bg-color);
+}
+.footer-logo-link {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 26px;
+  letter-spacing: 0.78px;
+}
+.footer-address {
+  gap: 9px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.footer-address-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  font-style: normal;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-address-link:hover,
+.footer-address-link:focus {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+.footer-address .footer-address-link:first-child {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+.footer-address .footer-address-link:first-child:hover {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+.soc-footer-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.soc-footer-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.soc-footer-icon {
+  fill: var(--add-white);
+}
+.soc-footer-link:hover,
+.soc-footer-link:focus {
+  background-color: var(--accent-color);
+}
+.subscribe {
+  padding-top: 12px;
+}
+.subscribe-title {
+  color: var(--add-white);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.subscribe-form {
+  display: flex;
+}
+.subscribe-input {
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.48px;
+  padding: 15px 16px;
+  width: 358px;
+  margin-right: 12px;
+  outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-input:focus,
+.subscribe-input:hover {
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
+.subscribe-btn {
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+  color: var(--add-white);
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+  padding: 10px 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-btn:focus,
+.subscribe-btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.icon-telegram {
+  fill: var(--add-white);
+}

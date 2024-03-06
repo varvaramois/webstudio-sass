@@ -1,0 +1,58 @@
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customers-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customers-icon {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--accent-color);
+}
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+  fill: var(--accent-color);
+}
+.soc-title {
+  padding-top: 12px;
+  color: var(--add-white);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+}
+.soc-icon {
+  fill: var(--add-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customers-title {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+.logo-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
