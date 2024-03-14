@@ -10,8 +10,8 @@
   background-size: 1600px;
   background-position: center;
 }
-.hero-title {
-  color: #fff;
+.hero__title {
+  color: $add-white;
   text-align: center;
   font-size: 44px;
   font-weight: 900;
@@ -20,33 +20,33 @@
   text-transform: uppercase;
 }
 // тут в мене стилі одразу до кількох тайтлів, але я поки не чипаю, бо це ж в компонентах буде ніби
-.team-title,
-.work-title,
-.gallery-subtitle,
-.advantages-item-title {
-  color: var(--main-color);
+.team__title,
+.work__title,
+.gallery__subtitle,
+.advantages__item-title {
+  color: $main-color;
 }
-.hero-btn {
+.hero__btn {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
-  color: #fff;
+  color: $add-white;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.96px;
-  background: var(--accent-color);
+  background: $accent-color;
   width: 216px;
   height: 50px;
   border: none;
-  border-color: var(--accent-color);
+  border-color: $accent-color;
   border-radius: 4px;
   transition-property: box-shadow, opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero-btn:hover,
-.hero-btn:focus {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  opacity: 0.9;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    opacity: 0.9;
+  }
 }

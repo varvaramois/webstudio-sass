@@ -19,37 +19,33 @@
 	<body>
 		<header class="header">
 			<div class="container">
-				<a href="index.html" class="link logo-link">
+				<a href="index.html" class="link logo">
 					<b class="accent">Web</b>Studio
 				</a>
 				<nav class="nav">
-					<ul class="list nav-list">
-						<li class="nav-item">
-							<a href="index.html" class="link nav-link">Студія</a>
+					<ul class="list nav__list">
+						<li class="nav__item"><a href="./index.html" class="link nav__link ">Студія</a></li>
+						<li class="nav__item">
+							<a href="" class="link nav__link current">Портфоліо</a>
 						</li>
-						<li class="nav-item">
-							<a href="" class="link nav-link current">Портфоліо</a>
-						</li>
-						<li class="nav-item">
-							<a href="" class="link nav-link">Контакти</a>
-						</li>
+						<li class="nav__item"><a href="" class="link nav__link">Контакти</a></li>
 					</ul>
 				</nav>
-				<ul class="list header-list">
-					<li class="header-item">
-						<address class="header-address">
-							<a href="mailto:info@devstudio.com" class="link header-address-link">
-								<svg class="address-icon" width="16" height="12">
+				<ul class="list header__list">
+					<li class="header__item">
+						<address class="header__address">
+							<a href="mailto:info@devstudio.com" class="link header__address--link">
+								<svg class="header__icon" width="16" height="12">
 									<use href="./images/symbol-defs.svg#icon-email"></use>
 								</svg>
 								info@devstudio.com
 							</a>
 						</address>
 					</li>
-					<li class="header-item">
-						<address class="header-item-address">
-							<a href="tel:+380961111111" class="link header-address-link">
-								<svg class="address-icon" width="10" height="16">
+					<li class="header__item">
+						<address class="header__address">
+							<a href="tel:+380961111111" class="link header__address--link">
+								<svg class="header__icon" width="10" height="16">
 									<use href="./images/symbol-defs.svg#icon-smartphone"></use>
 								</svg>
 								+38 096 111 11 11
@@ -60,177 +56,177 @@
 			</div>
 		</header>
 		<main class="main">
-			<section class="main-box">
+			<section class="gallery">
 				<div class="container">
 					<h1 class="visually-hidden">Портфоліо</h1>
-					<ul class="list filter-btn-list">
-						<li class="filter-btn-item">
-							<button type="button" class="filter-btn">Усі</button>
+					<ul class="list gallery-btn__list">
+						<li class="gallery-btn__item">
+							<button type="button" class="gallery-btn">Усі</button>
 						</li>
-						<li class="filter-btn-item">
-							<button type="button" class="filter-btn">Веб-сайти</button>
+						<li class="gallery-btn__item">
+							<button type="button" class="gallery-btn">Веб-сайти</button>
 						</li>
-						<li class="filter-btn-item">
-							<button type="button" class="filter-btn">Додатки</button>
+						<li class="gallery-btn__item">
+							<button type="button" class="gallery-btn">Додатки</button>
 						</li>
-						<li class="filter-btn-item">
-							<button type="button" class="filter-btn">Дизайн</button>
+						<li class="gallery-btn__item">
+							<button type="button" class="gallery-btn">Дизайн</button>
 						</li>
-						<li class="filter-btn-item">
-							<button type="button" class="filter-btn">Маркетинг</button>
+						<li class="gallery-btn__item">
+							<button type="button" class="gallery-btn">Маркетинг</button>
 						</li>
 					</ul>
-					<ul class="list gallery-list">
-						<li class="gallery-item">
-							<a href="" class="gallery-link">
-								<div class="overlay-image">
-									<img src="./images/list_img1.jpg" alt="ноутбук" class="gallery-photo" />
+					<ul class="list gallery__list">
+						<li class="gallery__item">
+							<a href="" class="gallery__link">
+								<div class="overlay__image">
+									<img src="./images/list_img1.jpg" alt="ноутбук" class="gallery__photo" />
 									<div class="project-overlay">
-										<p class="overlay-text">
+										<p class="overlay__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
 								<div class="gallery-wrapper-info">
-									<h3 class="gallery-subtitle">Технокряк</h3>
-									<p class="gallery-text">Веб-сайт</p>
+									<h3 class="gallery__subtitle">Технокряк</h3>
+									<p class="gallery__text">Веб-сайт</p>
 								</div>
 							</a>
 						</li>
-						<li class="gallery-item">
-							<a href="" class="gallery-link">
-								<div class="overlay-image">
-									<img src="./images/list_img2.jpg" alt="два баскетболісти" class="gallery-photo" />
+						<li class="gallery__item">
+							<a href="" class="gallery__link">
+								<div class="overlay__image">
+									<img src="./images/list_img2.jpg" alt="два баскетболісти" class="gallery__photo" />
 									<div class="project-overlay">
-										<p class="overlay-text">
+										<p class="overlay__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
 								<div class="gallery-wrapper-info">
-									<h3 class="gallery-subtitle">Постер New Orlean vs Golden Star</h3>
-									<p class="gallery-text">Дизайн</p>
+									<h3 class="gallery__subtitle">Постер New Orlean vs Golden Star</h3>
+									<p class="gallery__text">Дизайн</p>
 								</div>
 							</a>
 						</li>
-						<li class="gallery-item">
-							<a href="" class="gallery-link">
-								<div class="overlay-image">
-									<img src="./images/list_img3.jpg" alt="логотип ресторану морепродуктів" class="gallery-photo" />
+						<li class="gallery__item">
+							<a href="" class="gallery__link">
+								<div class="overlay__image">
+									<img src="./images/list_img3.jpg" alt="логотип ресторану морепродуктів" class="gallery__photo" />
 									<div class="project-overlay">
-										<p class="overlay-text">
+										<p class="overlay__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
 								<div class="gallery-wrapper-info">
-									<h3 class="gallery-subtitle">Ресторан Seafood</h3>
-									<p class="gallery-text">Додаток</p>
+									<h3 class="gallery__subtitle">Ресторан Seafood</h3>
+									<p class="gallery__text">Додаток</p>
 								</div>
 							</a>
 						</li>
-						<li class="gallery-item">
-							<a href="" class="gallery-link">
-								<div class="overlay-image">
-									<img src="./images/list_img4.jpg" alt="навушники" class="gallery-photo" />
+						<li class="gallery__item">
+							<a href="" class="gallery__link">
+								<div class="overlay__image">
+									<img src="./images/list_img4.jpg" alt="навушники" class="gallery__photo" />
 									<div class="project-overlay">
-										<p class="overlay-text">
+										<p class="overlay__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
 								<div class="gallery-wrapper-info">
-									<h3 class="gallery-subtitle">Проєкт Prime</h3>
-									<p class="gallery-text">Маркетинг</p>
+									<h3 class="gallery__subtitle">Проєкт Prime</h3>
+									<p class="gallery__text">Маркетинг</p>
 								</div>
 							</a>
 						</li>
-						<li class="gallery-item">
-							<a href="" class="gallery-link">
-								<div class="overlay-image">
-									<img src="./images/list_img5.jpg" alt="біла та коричнева коробки" class="gallery-photo" />
+						<li class="gallery__item">
+							<a href="" class="gallery__link">
+								<div class="overlay__image">
+									<img src="./images/list_img5.jpg" alt="біла та коричнева коробки" class="gallery__photo" />
 									<div class="project-overlay">
-										<p class="overlay-text">
+										<p class="overlay__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
 								<div class="gallery-wrapper-info">
-									<h3 class="gallery-subtitle">Проєкт Boxes</h3>
-									<p class="gallery-text">Додаток</p>
+									<h3 class="gallery__subtitle">Проєкт Boxes</h3>
+									<p class="gallery__text">Додаток</p>
 								</div>
 							</a>
 						</li>
-						<li class="gallery-item">
-							<a href="" class="gallery-link">
-								<div class="overlay-image">
-									<img src="./images/list_img6.jpg" alt="комп'ютер" class="gallery-photo" />
+						<li class="gallery__item">
+							<a href="" class="gallery__link">
+								<div class="overlay__image">
+									<img src="./images/list_img6.jpg" alt="комп'ютер" class="gallery__photo" />
 									<div class="project-overlay">
-										<p class="overlay-text">
+										<p class="overlay__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
 								<div class="gallery-wrapper-info">
-									<h3 class="gallery-subtitle">Inspiration has no Borders</h3>
-									<p class="gallery-text">Веб-сайт</p>
+									<h3 class="gallery__subtitle">Inspiration has no Borders</h3>
+									<p class="gallery__text">Веб-сайт</p>
 								</div>
 							</a>
 						</li>
-						<li class="gallery-item">
-							<a href="" class="gallery-link">
-								<div class="overlay-image">
-									<img src="./images/list_img7.jpg" alt="книга" class="gallery-photo" />
+						<li class="gallery__item">
+							<a href="" class="gallery__link">
+								<div class="overlay__image">
+									<img src="./images/list_img7.jpg" alt="книга" class="gallery__photo" />
 									<div class="project-overlay">
-										<p class="overlay-text">
+										<p class="overlay__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
 								<div class="gallery-wrapper-info">
-									<h3 class="gallery-subtitle">Видання Limited Edition</h3>
-									<p class="gallery-text">Дизайн</p>
+									<h3 class="gallery__subtitle">Видання Limited Edition</h3>
+									<p class="gallery__text">Дизайн</p>
 								</div>
 							</a>
 						</li>
-						<li class="gallery-item">
-							<a href="" class="gallery-link">
-								<div class="overlay-image">
-									<img src="./images/list_img8.jpg" alt="логотип lab el tag" class="gallery-photo" />
+						<li class="gallery__item">
+							<a href="" class="gallery__link">
+								<div class="overlay__image">
+									<img src="./images/list_img8.jpg" alt="логотип lab el tag" class="gallery__photo" />
 									<div class="project-overlay">
-										<p class="overlay-text">
+										<p class="overlay__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
 								<div class="gallery-wrapper-info">
-									<h3 class="gallery-subtitle">Проєкт LAB</h3>
-									<p class="gallery-text">Маркетинг</p>
+									<h3 class="gallery__subtitle">Проєкт LAB</h3>
+									<p class="gallery__text">Маркетинг</p>
 								</div>
 							</a>
 						</li>
-						<li class="gallery-item">
-							<a href="" class="gallery-link">
-								<div class="overlay-image">
-									<img src="./images/list_img9.jpg" alt="програміст за ноутбуком" class="gallery-photo" />
+						<li class="gallery__item">
+							<a href="" class="gallery__link">
+								<div class="overlay__image">
+									<img src="./images/list_img9.jpg" alt="програміст за ноутбуком" class="gallery__photo" />
 									<div class="project-overlay">
-										<p class="overlay-text">
+										<p class="overlay__text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
 								<div class="gallery-wrapper-info">
-									<h3 class="gallery-subtitle">Growing Business</h3>
-									<p class="gallery-text">Додаток</p>
+									<h3 class="gallery__subtitle">Growing Business</h3>
+									<p class="gallery__text">Додаток</p>
 								</div>
 							</a>
 						</li>
@@ -240,46 +236,45 @@
 		</main>
 		<footer class="footer">
 			<div class="container">
-				<div class="footer-information">
-					<a href="index.html" class="link footer-logo-link">
-						<b class="accent">Web</b>
-						Studio
+				<div class="footer__information">
+					<a href="index.html" class="link footer__logo">
+						<b class="accent">Web</b>Studio
 					</a>
-					<address class="footer-address">
-						<a href="https://goo.gl/maps/oQdgYgqRfTQJcvnj9" class="link footer-address-link">
+					<address class="footer__address">
+						<a href="https://goo.gl/maps/oQdgYgqRfTQJcvnj9" class="link footer__link">
 							м. Київ, пр-т Лесі Українки, 26
 						</a>
-						<a href="mailto:info@devstudio.com" class="link footer-address-link">info@devstudio.com</a>
-						<a href="tel:+380961111111" class="link footer-address-link">+38 096 111 11 11</a>
+						<a href="mailto:info@devstudio.com" class="link footer__link">info@devstudio.com</a>
+						<a href="tel:+380961111111" class="link footer__link">+38 096 111 11 11</a>
 					</address>
 				</div>
 				<div class="soc-media">
-					<p class="soc-title">ПРИЄДНУЙТЕСЬ</p>
-					<ul class="list soc-footer-list">
-						<li class="soc-footer-list-item">
-							<a href="" class="soc-footer-link">
-								<svg class="soc-footer-icon" width="20" height="20">
+					<p class="soc-media__title">ПРИЄДНУЙТЕСЬ</p>
+					<ul class="list soc-media__list">
+						<li class="soc-media__item">
+							<a href="" class="soc-media__link">
+								<svg class="soc-media__icon" width="20" height="20">
 									<use href="./images/symbol-defs.svg#icon-instagram"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="soc-footer-list-item">
-							<a href="" class="soc-footer-link">
-								<svg class="soc-footer-icon" width="20" height="20">
+						<li class="soc-media__item">
+							<a href="" class="soc-media__link">
+								<svg class="soc-media__icon" width="20" height="20">
 									<use href="./images/symbol-defs.svg#icon-twitter"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="soc-footer-list-item">
-							<a href="" class="soc-footer-link">
-								<svg class="soc-footer-icon" width="20" height="20">
+						<li class="soc-media__item">
+							<a href="" class="soc-media__link">
+								<svg class="soc-media__icon" width="20" height="20">
 									<use href="./images/symbol-defs.svg#icon-facebook"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="soc-footer-list-item">
-							<a href="" class="soc-footer-link">
-								<svg class="soc-footer-icon" width="20" height="20">
+						<li class="soc-media__item">
+							<a href="" class="soc-media__link">
+								<svg class="soc-media__icon" width="20" height="20">
 									<use href="./images/symbol-defs.svg#icon-linkedin"></use>
 								</svg>
 							</a>
@@ -287,13 +282,13 @@
 					</ul>
 				</div>
 				<div class="subscribe">
-					<p class="subscribe-title">Підпишіться на розсилку</p>
-					<form class="subscribe-form">
-						<input class="subscribe-input" type="email" placeholder="E-mail" />
-						<button class="subscribe-btn" type="submit">
+					<p class="subscribe__title">Підпишіться на розсилку</p>
+					<form class="subscribe__form">
+						<input class="subscribe__input" type="email" placeholder="E-mail" />
+						<button class="subscribe__btn" type="submit">
 							Підписатися
-							<svg class="icon-telegram-svg" width="24" height="24">
-								<use class="icon-telegram" href="./images/symbol-defs.svg#icon-telegram"></use>
+							<svg class="subscribe__icon" width="24" height="24">
+								<use class="subscribe__telegram" href="./images/symbol-defs.svg#icon-telegram"></use>
 							</svg>
 						</button>
 					</form>

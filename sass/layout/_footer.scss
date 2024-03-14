@@ -5,21 +5,15 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--main-bg-color);
+  background-color: $main-bg-color;
 }
-.footer-logo-link {
-  color: #fff;
-  font-family: Raleway;
-  font-size: 26px;
-  letter-spacing: 0.78px;
-}
-.footer-address {
+.footer__address {
   gap: 9px;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 }
-.footer-address-link {
+.footer__link {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
@@ -28,28 +22,34 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    cursor: pointer;
+  }
 }
-.footer-address-link:hover,
-.footer-address-link:focus {
-  color: var(--accent-color);
-  cursor: pointer;
-}
-.footer-address .footer-address-link:first-child {
-  color: #fff;
+.footer__address .footer__link:first-child {
+  color: $add-white;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
 }
-.footer-address .footer-address-link:first-child:hover {
-  color: var(--accent-color);
+.footer__address .footer__link:first-child:hover {
+  color: $accent-color;
   cursor: pointer;
 }
-.soc-footer-list {
+.soc-media__title {
+  margin-top: 12px;
+  color: $add-white;
+  font-weight: 700;
+  font-size: 14px;
+}
+.soc-media__list {
   display: flex;
   gap: 10px;
   margin-top: 20px;
 }
-.soc-footer-link {
+.soc-media__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -60,29 +60,29 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
-.soc-footer-icon {
-  fill: var(--add-white);
-}
-.soc-footer-link:hover,
-.soc-footer-link:focus {
-  background-color: var(--accent-color);
+.soc-media__icon {
+  fill: $add-white;
 }
 .subscribe {
   padding-top: 12px;
 }
-.subscribe-title {
-  color: var(--add-white);
+.subscribe__title {
+  color: $add-white;
   font-size: 14px;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.subscribe-form {
+.subscribe__form {
   display: flex;
 }
-.subscribe-input {
+.subscribe__input {
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0);
@@ -99,18 +99,18 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    border-color: $accent-color;
+    cursor: pointer;
+  }
 }
-.subscribe-input:focus,
-.subscribe-input:hover {
-  border-color: var(--accent-color);
-  cursor: pointer;
-}
-.subscribe-btn {
+.subscribe__btn {
   border-radius: 4px;
-  background: #2196f3;
+  background: $accent-color;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
-  color: var(--add-white);
+  color: $add-white;
   font-weight: 700;
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.96px;
@@ -121,12 +121,12 @@
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
 }
-.subscribe-btn:focus,
-.subscribe-btn:hover {
-  opacity: 0.9;
-  cursor: pointer;
-}
-.icon-telegram {
-  fill: var(--add-white);
+.subscribe__telegram {
+  fill: $add-white;
 }
