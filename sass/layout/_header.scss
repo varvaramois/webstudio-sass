@@ -74,17 +74,17 @@
     color: $accent-color;
     cursor: pointer;
   }
-  &:hover .header__icon,
-  &:focus .header__icon {
-    fill: $accent-color;
-  }
 }
-.header__icon {
+.contact-list__icon {
   margin-right: 10px;
   fill: $add-color;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .contact-list__link:hover &,
+  .contact-list__link:focus & {
+    fill: $accent-color;
+  }
   .contact-list__link:hover &,
   .contact-list__link:focus & {
     fill: $accent-color;
