@@ -1,9 +1,9 @@
-.soc__list {
+.social-team {
   margin-top: 16px;
   display: flex;
   justify-content: space-around;
 }
-.soc__link {
+.social-team__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -17,8 +17,8 @@
   &:focus {
     background-color: $accent-color;
   }
-  &:hover .soc__icon,
-  &:focus .soc__icon {
+  &:hover .social-team__icon,
+  &:focus .social-team__icon {
     fill: $add-white;
   }
 }
@@ -44,7 +44,7 @@
   font-size: 36px;
   letter-spacing: 1.08px;
 }
-.team__wrapper--info {
+.team__wrapper-info {
   padding: 30px 32px;
 }
 .team__subtitle {
@@ -62,4 +62,10 @@
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.48px;
+}
+.social-team__icon {
+  fill: $add-color;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -17,30 +17,16 @@
 &:focus {
   border-color: $accent-color;
 }
-&:hover .customers__icon,
-&:focus .customers__icon {
-  fill: $accent-color;
-}
 }
 .customers__icon {
   fill: #afb1b8;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .customers__link:hover &,
+  .customers__link:focus & {
+  fill: $accent-color;
 }
-.soc__title {
-  padding-top: 12px;
-  color: $add-white;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-}
-.soc__icon {
-  fill: $add-color;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers__title {
   color: $main-color;

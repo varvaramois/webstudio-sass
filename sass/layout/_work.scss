@@ -15,12 +15,11 @@ text-align: center;
 margin-bottom: 50px;
 }
 .work__subtitle {
-  margin-bottom: 50px;
   text-align: center;
   font-size: 36px;
   letter-spacing: 1.08px;
 }
-.work__item > .work__subtitle {
+.work__subtitle {
   position: absolute;
   bottom: 0;
   right: 0;

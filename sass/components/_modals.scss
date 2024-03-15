@@ -30,7 +30,7 @@
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-.btn--close {
+.btn-close {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   padding: 6px;
@@ -41,13 +41,13 @@
   position: absolute;
   right: 8px;
   top: 8px;
-  &:hover .btn__svg--close,
-  &:focus .btn__svg--close {
+  &:hover .btn-close__icon,
+  &:focus .btn-close__icon {
     fill: $accent-color;
     cursor: pointer;
   }
 }
-.btn__svg--close {
+.btn-close__icon {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -101,7 +101,7 @@
 .modal__input:hover + .modal__svg {
   fill: $accent-color;
 }
-.comment {
+.modal__comment {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   font-weight: 400;
@@ -141,26 +141,4 @@
 }
 .checkbox__rules {
   color: $accent-color;
-}
-.modal__btn {
-  color: $add-white;
-  font-weight: 700;
-  line-height: 30px; /* 187.5% */
-  letter-spacing: 0.96px;
-  border-radius: 4px;
-  background: $accent-color;
-  border: none;
-  padding: 10px 52px;
-  display: block;
-  margin: 0 auto;
-  margin-top: 30px;
-  transition-property: box-shadow, opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-    opacity: 0.9;
-  }
 }
