@@ -19,9 +19,7 @@
   font-weight: 400;
   line-height: 1.71;
   font-style: normal;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(color);
   &:hover,
   &:focus {
     color: $accent-color;
@@ -57,9 +55,7 @@
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(background-color);
   &:hover,
   &:focus {
     background-color: $accent-color;
@@ -73,8 +69,7 @@
 }
 .subscribe__title {
   color: $add-white;
-  font-size: 14px;
-  font-weight: 700;
+  @extend %text;
   line-height: normal;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -96,9 +91,7 @@
   width: 358px;
   margin-right: 12px;
   outline: none;
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(border-color);
   &:focus,
   &:hover {
     border-color: $accent-color;

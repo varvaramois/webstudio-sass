@@ -25,9 +25,7 @@
   display: block;
   padding: 20px 0;
   position: relative;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(color);
   &:hover,
   &:focus {
     color: $accent-color;
@@ -51,9 +49,7 @@
   position: absolute;
   bottom: -1px;
   border-radius: 2px;
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(transform);
 }
 .nav__link--current:hover::after {
   transform: scale(1.2);
@@ -66,9 +62,7 @@
   font-weight: 500;
   letter-spacing: 0.28px;
   font-style: normal;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(color);
   &:hover,
   &:focus {
     color: $accent-color;
@@ -78,9 +72,7 @@
 .contact-list__icon {
   margin-right: 10px;
   fill: $add-color;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(fill);
   .contact-list__link:hover &,
   .contact-list__link:focus & {
     fill: $accent-color;

@@ -7,12 +7,8 @@
   display: flex;
   width: 44px;
   height: 44px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include border-radius(50%);
+  @include transition(background-color);
   &:hover,
   &:focus {
     background-color: $accent-color;
@@ -65,7 +61,5 @@
 }
 .social-team__icon {
   fill: $add-color;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(fill);
 }
