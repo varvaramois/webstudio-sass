@@ -34,7 +34,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 6px;
   display: flex;
-  @include border-radius(50%);
+  @include bordered-card(50%);
   background-color: transparent;
   position: absolute;
   right: 8px;

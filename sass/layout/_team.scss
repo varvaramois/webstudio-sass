@@ -7,7 +7,7 @@
   display: flex;
   width: 44px;
   height: 44px;
-  @include border-radius(50%);
+  @include bordered-card(50%);
   @include transition(background-color);
   &:hover,
   &:focus {
