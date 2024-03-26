@@ -1,17 +1,29 @@
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .customers__link {
-  display: flex;
-  width: 170px;
+  width: 210px;
   height: 92px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   @include bordered-card(4px);
   border: 1px solid #afb1b8;
   @include transition(border-color);
   &:hover,
   &:focus {
     border-color: $accent-color;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 .customers__icon {
@@ -33,6 +45,10 @@
 }
 .customers__list {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 30px;
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }

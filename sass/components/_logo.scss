@@ -1,8 +1,12 @@
 .logo {
   color: #000000;
   font-family: Raleway;
-  font-size: 26px;
-  letter-spacing: 0.78px;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+  }
 }
 .header__logo {
   margin-right: 93px;
