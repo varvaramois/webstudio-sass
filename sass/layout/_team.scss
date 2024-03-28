@@ -1,7 +1,8 @@
 .social-team {
   margin-top: 16px;
   display: flex;
-  justify-content: space-around;
+  gap: 10px;
+  justify-content: space-between;
 }
 .social-team__link {
   display: flex;
@@ -34,10 +35,9 @@
   gap: 30px;
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
-    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 .team__item {
@@ -47,20 +47,27 @@
   border-radius: 0px 0px 4px 4px;
   background-color: $add-white;
   @media screen and (min-width: 768px) {
-    width: 354px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 270px;
+    flex-basis: calc((100% - 30px)/2);
   }
 }
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   letter-spacing: 1.08px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 .team__wrapper-info {
+  padding: 30px 122px 24px;
+  @media screen and (min-width: 768px) {
+  padding: 30px 74px 24px;
+  }
+  @media screen and (min-width: 1200px) {
   padding: 30px 32px;
+  }
 }
 .team__subtitle {
   color: $main-color;

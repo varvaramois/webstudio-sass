@@ -8,37 +8,22 @@
     url(../images/background_img.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  @media screen and (min-width: 768px) {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/background_img.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/background_img.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 .hero__title {
   color: $add-white;
   text-align: center;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 2.64px;
   text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
 }
 // тут в мене стилі одразу до кількох тайтлів, але я поки не чипаю, бо це ж в компонентах буде ніби
 .team__title,

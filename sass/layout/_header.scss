@@ -1,15 +1,15 @@
 .header {
   padding-top: 16px;
+  padding-bottom: 16px;
   @media screen and (min-width: 768px) {
     padding-top: 26px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 26px;
+    padding-bottom: 0;
   }
 }
 .header::after {
   content: "";
   display: block;
+  position: absolute;
   width: 100%;
   height: 1px;
   background-color: #ececec;
@@ -22,9 +22,6 @@
 .nav {
   display: none;
   @media screen and (min-width: 768px) {
-    display: block;
-  }
-  @media screen and (min-width: 1200px) {
     display: block;
   }
 }
@@ -46,6 +43,9 @@
     color: $accent-color;
     cursor: pointer;
   }
+  @media screen and (min-width: 768px) {
+    padding: 32px 0;
+  }
 }
 .contact-list {
   display: none;
@@ -56,7 +56,18 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     gap: 30px;
-    margin-left: auto;
+  }
+}
+.nav-menu__item {
+  display: block;
+  @include transition(fill);
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 .nav__link--current {

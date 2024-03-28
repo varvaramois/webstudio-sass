@@ -1,5 +1,5 @@
 @for $i from 1 through 4 {
-  .product__item:nth-child(#{$i}) {
+  .advantages__item:nth-child(#{$i})::before {
     background-image: url("../images/advent_img#{$i}.svg");
   }
 }
