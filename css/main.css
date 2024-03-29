@@ -114,6 +114,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .header {
+    padding-top: 0;
     padding-bottom: 0;
   }
 }
@@ -196,7 +197,7 @@ img {
   }
 }
 
-.nav__btn {
+.menu__btn {
   display: block;
   background-color: #ffffff;
   border: none;
@@ -207,12 +208,12 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav__btn:hover, .nav__btn:focus {
+.menu__btn:hover, .menu__btn:focus {
   fill: #2196f3;
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
-  .nav__btn {
+  .menu__btn {
     display: none;
   }
 }
