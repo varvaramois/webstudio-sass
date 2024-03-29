@@ -114,7 +114,6 @@ img {
 }
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 26px;
     padding-bottom: 0;
   }
 }
@@ -197,8 +196,10 @@ img {
   }
 }
 
-.nav-menu__item {
+.nav__btn {
   display: block;
+  background-color: #ffffff;
+  border: none;
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
@@ -206,12 +207,12 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-menu__item:hover, .nav-menu__item:focus {
+.nav__btn:hover, .nav__btn:focus {
   fill: #2196f3;
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
-  .nav-menu__item {
+  .nav__btn {
     display: none;
   }
 }
@@ -286,9 +287,6 @@ img {
 .contact-list__link:hover .contact-list__icon, .contact-list__link:focus .contact-list__icon {
   fill: #2196f3;
 }
-.contact-list__link:hover .contact-list__icon, .contact-list__link:focus .contact-list__icon {
-  fill: #2196f3;
-}
 
 .hero {
   padding-top: 118px;
@@ -356,14 +354,6 @@ img {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantages__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
 }
 
@@ -458,9 +448,9 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social-team__link {
@@ -557,16 +547,11 @@ img {
 }
 
 .team__wrapper-info {
-  padding: 30px 122px 24px;
-}
-@media screen and (min-width: 768px) {
-  .team__wrapper-info {
-    padding: 30px 74px 24px;
-  }
+  padding: 30px 24px;
 }
 @media screen and (min-width: 1200px) {
   .team__wrapper-info {
-    padding: 30px 32px;
+    padding-bottom: 30px;
   }
 }
 
@@ -693,6 +678,12 @@ img {
   .customers__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 3);
         flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__item {
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
   }
 }
 

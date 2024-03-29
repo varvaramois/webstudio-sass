@@ -2,7 +2,6 @@
   padding-top: 16px;
   padding-bottom: 16px;
   @media screen and (min-width: 768px) {
-    padding-top: 26px;
     padding-bottom: 0;
   }
 }
@@ -58,8 +57,10 @@
     gap: 30px;
   }
 }
-.nav-menu__item {
+.nav__btn {
   display: block;
+  background-color: $add-white;
+  border: none;
   @include transition(fill);
   &:hover,
   &:focus {
@@ -109,10 +110,6 @@
   margin-right: 10px;
   fill: $add-color;
   @include transition(fill);
-  .contact-list__link:hover &,
-  .contact-list__link:focus & {
-    fill: $accent-color;
-  }
   .contact-list__link:hover &,
   .contact-list__link:focus & {
     fill: $accent-color;
