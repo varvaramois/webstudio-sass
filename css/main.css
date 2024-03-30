@@ -106,6 +106,19 @@ img {
 
 .footer__logo {
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
 }
 
 .header {
@@ -692,15 +705,63 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 70px;
+    margin-right: 93px;
+  }
 }
 
 .footer__address {
@@ -713,6 +774,13 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    text-align: start;
+    min-width: 231px;
+  }
 }
 
 .footer__link {
@@ -746,10 +814,16 @@ img {
 }
 
 .soc-media__title {
+  text-align: center;
   margin-top: 12px;
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .soc-media__title {
+    text-align: start;
+  }
 }
 
 .soc-media__list {
@@ -791,19 +865,46 @@ img {
 
 .subscribe {
   padding-top: 12px;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    max-width: 570px;
+    padding-top: 0;
+  }
 }
 
 .subscribe__title {
+  text-align: center;
   color: #ffffff;
   line-height: normal;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__title {
+    text-align: start;
+  }
 }
 
 .subscribe__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    gap: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .subscribe__input {
@@ -818,9 +919,8 @@ img {
   line-height: 20px; /* 125% */
   letter-spacing: 0.48px;
   padding: 15px 16px;
-  width: 358px;
-  margin-right: 12px;
   outline: none;
+  width: 100%;
   -webkit-transition-property: border-color;
   transition-property: border-color;
   -webkit-transition-duration: 250ms;
@@ -831,6 +931,18 @@ img {
 .subscribe__input:focus, .subscribe__input:hover {
   border-color: #2196f3;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    margin: 0 auto;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    max-width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .gallery {
@@ -1188,6 +1300,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+  max-width: 200px;
+  margin: 0 auto;
   -webkit-transition-property: opacity;
   transition-property: opacity;
   -webkit-transition-duration: 250ms;

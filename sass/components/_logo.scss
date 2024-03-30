@@ -11,10 +11,10 @@
 .header__logo {
   margin-right: auto;
   @media screen and (min-width: 768px) {
-  margin-right: 88px;
+    margin-right: 88px;
   }
   @media screen and (min-width: 1200px) {
-  margin-right: 93px;
+    margin-right: 93px;
   }
 }
 .logo__accent {
@@ -22,4 +22,9 @@
 }
 .footer__logo {
   color: $add-white;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
 }

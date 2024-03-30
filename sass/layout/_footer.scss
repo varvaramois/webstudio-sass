@@ -1,17 +1,44 @@
 .footer__container {
   display: flex;
-  justify-content: space-between;
+  gap: 60px;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $main-bg-color;
 }
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 70px;
+    margin-right: 93px;
+  }
+}
 .footer__address {
   gap: 9px;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    min-width: 231px;
+  }
 }
 .footer__link {
   color: rgba(255, 255, 255, 0.6);
@@ -37,10 +64,14 @@
   cursor: pointer;
 }
 .soc-media__title {
+  text-align: center;
   margin-top: 12px;
   color: $add-white;
   font-weight: 700;
   font-size: 14px;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 .soc-media__list {
   display: flex;
@@ -66,16 +97,31 @@
 }
 .subscribe {
   padding-top: 12px;
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    max-width: 570px;
+    padding-top: 0;
+  }
 }
 .subscribe__title {
+  text-align: center;
   color: $add-white;
   @extend %text;
   line-height: normal;
   text-transform: uppercase;
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 .subscribe__form {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media screen and (min-width: 1200px) {
+    gap: 0;
+    flex-direction: row;
+  }
 }
 .subscribe__input {
   border-radius: 4px;
@@ -88,13 +134,20 @@
   line-height: 20px; /* 125% */
   letter-spacing: 0.48px;
   padding: 15px 16px;
-  width: 358px;
-  margin-right: 12px;
   outline: none;
+  width: 100%;
   @include transition(border-color);
   &:focus,
   &:hover {
     border-color: $accent-color;
     cursor: pointer;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    max-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 358px;
+    margin-right: 12px;
   }
 }
