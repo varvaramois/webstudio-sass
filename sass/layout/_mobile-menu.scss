@@ -1,62 +1,85 @@
 .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
-  }
-  @media (min-width: 768px) {
-    .menu-toggle {
-      display: none;
-    }
-  }
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  .menu__btn {
-    display: block;
-    background-color: $add-white;
-    border: none;
-    @include transition(fill);
-    &:hover,
-    &:focus {
-      fill: $accent-color;
-      cursor: pointer;
-    }
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
-  }
-  .menu-open {
-    border: none;
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
 }
-  .menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 32px;
-    background-color: #3f51b5;
-    z-index: 999;
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
   }
-  .menu-container.is-open {
-    transform: translateX(0);
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.menu__btn {
+  display: block;
+  background-color: $add-white;
+  border: none;
+  @include transition(fill);
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    cursor: pointer;
   }
-  
-  .menu-container .menu-toggle {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #fff;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
+}
+.menu-open {
+  border: none;
+}
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 302px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: $add-white;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+.mobile-menu__list {
+font-weight: 500;
+font-size: 40px;
+letter-spacing: 0.02em;
+display: flex;
+flex-direction: column;
+gap: 32px;
+}
+.mobile-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.mobile-contact__link {
+font-weight: 500;
+font-size: 34px;
+letter-spacing: 0.02em;
+}
+.mobile-contact__link--mail {
+  font-size: 24px;
+}
