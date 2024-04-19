@@ -212,27 +212,6 @@ img {
   }
 }
 
-.menu__btn {
-  display: block;
-  background-color: #ffffff;
-  border: none;
-  -webkit-transition-property: fill;
-  transition-property: fill;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.menu__btn:hover, .menu__btn:focus {
-  fill: #2196f3;
-  cursor: pointer;
-}
-@media screen and (min-width: 768px) {
-  .menu__btn {
-    display: none;
-  }
-}
-
 .nav__link--current {
   color: #2196f3;
 }
