@@ -1391,21 +1391,9 @@ img {
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0;
-  padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
-  border-radius: 50%;
   outline: none;
 }
 
@@ -1414,11 +1402,6 @@ img {
     display: none;
   }
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .menu__btn {
   display: block;
   background-color: #ffffff;
@@ -1480,13 +1463,10 @@ img {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .mobile-menu__list {
-  font-weight: 500;
-  font-size: 40px;
-  letter-spacing: 0.02em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1495,6 +1475,20 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
+  padding-top: 8px;
+}
+
+.mobile-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
+}
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: #2196f3;
+  cursor: pointer;
 }
 
 .mobile-contact-list {
@@ -1512,8 +1506,44 @@ img {
   font-weight: 500;
   font-size: 34px;
   letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .mobile-contact__link--mail {
   font-size: 24px;
+  color: #757575;
+}
+
+.nav__link--current {
+  color: #2196f3;
+}
+
+.contact__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 64px;
+}
+
+.mobile-social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.mobile-social__link::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mobile-social__link {
+  color: #2196f3;
 }/*# sourceMappingURL=main.css.map */

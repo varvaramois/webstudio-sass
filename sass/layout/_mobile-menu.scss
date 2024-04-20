@@ -1,25 +1,15 @@
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
-  border-radius: 50%;
   outline: none;
 }
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
-}
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
 }
 .menu__btn {
   display: block;
@@ -60,15 +50,25 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: $add-white;
 }
 .mobile-menu__list {
-font-weight: 500;
-font-size: 40px;
-letter-spacing: 0.02em;
 display: flex;
 flex-direction: column;
 gap: 32px;
+padding-top: 8px;
+}
+.mobile-menu__link {
+font-weight: 500;
+font-size: 40px;
+letter-spacing: 0.02em;
+color: $main-color;
+transition: color 250ms ease-in-out;
+&:hover,
+&:focus {
+  color: $accent-color;
+  cursor: pointer;
+}
 }
 .mobile-contact-list {
   display: flex;
@@ -79,7 +79,31 @@ gap: 32px;
 font-weight: 500;
 font-size: 34px;
 letter-spacing: 0.02em;
+color: $accent-color;
 }
 .mobile-contact__link--mail {
   font-size: 24px;
+  color: $add-color;
+}
+.nav__link--current {
+  color: $accent-color;
+}
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.mobile-social__list {
+  display: flex;
+  gap: 20px;
+}
+.mobile-social__link::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.mobile-social__link {
+  color: $accent-color;
 }
