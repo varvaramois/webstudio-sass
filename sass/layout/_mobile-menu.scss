@@ -101,21 +101,19 @@ font-size: 34px;
   gap: 20px;
   padding-top: 64px;
 }
-.mobile-social__link::after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-  position:absolute; 
-  top: 0; 
-  right: -10px;
-}
 .mobile-social__link {
   color: $accent-color;
   position:relative;
   font-size: 11px;
+  padding: 0 15px;
+  border-right: 1px rgba(0, 0, 0, 0.1) solid;
   @media screen and (min-width: 480px) {
   font-size: 18px;
   }
+}
+.mobile-social__link:first-child {
+  padding-left: 0;
+}
+.mobile-social__link--border-none {
+  border: none;
 }
