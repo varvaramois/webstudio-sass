@@ -215,7 +215,21 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img src="./images/worker1.jpg" alt="Ігор Дем'яненко" />
+              <img src="./images/worker1.jpg" alt="Ігор Дем'яненко" />   
+              <img
+              class="team__img"
+              srcset="
+                  ./images/img-portf/portf1-tab.jpg    354w,
+                   ./images/img-portf/portf1-des.jpg    370w,
+                   ./images/img-portf/portf1-mob.jpg    450w,
+                    ./images/img-portf/portf1-tab@2x.jpg 708w,
+                    ./images/img-portf/portf1-des@2x.jpg 740w,
+                     ./images/img-portf/portf1-mob@2x.jpg 900w "
+              sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100%"
+              src="./images/worker1.jpg"
+              alt="Ігор Дем'яненко"
+                      />
+
               <div class="team__wrapper-info">
                 <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>

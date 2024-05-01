@@ -7,7 +7,8 @@
     ),
     url(../images/background_img-mob.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
+  background-size: cover;
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
